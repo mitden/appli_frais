@@ -1,0 +1,18 @@
+test
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/application/views/v_connexion.php b/application/views/v_connexion.php
+index 652410a..127b202 100644
+--- a/application/views/v_connexion.php
++++ b/application/views/v_connexion.php
+@@ -4,7 +4,7 @@
+ ?>
+ 
+ <div id="contenu">
+-	<h2>Identification utilisateur</h2>
++	<h2>Identification utilisateur test</h2>
+ 
+ 	<?php if (isset($erreur))	echo '<div class ="erreur"><ul><li>'.$erreur.'</li></ul></div>'; ?>

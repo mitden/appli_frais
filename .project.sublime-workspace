@@ -1,0 +1,613 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mo",
+				"model"
+			],
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"strLo",
+				"strtolower"
+			],
+			[
+				"re",
+				"result_log"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"res",
+				"result_log"
+			],
+			[
+				"f",
+				"fclose"
+			],
+			[
+				"array_k",
+				"array_key_exists"
+			],
+			[
+				"to",
+				"totalprix"
+			],
+			[
+				"adr",
+				"address"
+			],
+			[
+				"p",
+				"profile"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"arr",
+				"array_sum"
+			],
+			[
+				"pdt_",
+				"pdt_ref"
+			],
+			[
+				"ara",
+				"array\t$… = array (…)"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"i",
+				"inherit"
+			],
+			[
+				"count",
+				"countPannier"
+			],
+			[
+				"pro",
+				"produit"
+			],
+			[
+				"key",
+				"keys"
+			],
+			[
+				"ar",
+				"array_keys"
+			],
+			[
+				"pri",
+				"produit"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"de",
+				"designation"
+			],
+			[
+				"inclue",
+				"include"
+			],
+			[
+				"uns",
+				"unset"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"session_",
+				"session_destroy"
+			],
+			[
+				"pr",
+				"prix"
+			],
+			[
+				"ve",
+				"vendeur"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"prdui",
+				"produit"
+			],
+			[
+				"session_sa",
+				"session_start"
+			],
+			[
+				"n",
+				"nom"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"qu",
+				"quote"
+			],
+			[
+				"ca",
+				"cat_data"
+			],
+			[
+				"produit",
+				"produit"
+			],
+			[
+				"nom",
+				"nomCat"
+			],
+			[
+				"cat_",
+				"cat_code"
+			],
+			[
+				"categorie_",
+				"categorie_info"
+			],
+			[
+				"cat",
+				"cat_libelle"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"prod",
+				"produits"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"fet",
+				"fetchAll"
+			],
+			[
+				"id",
+				"id_cat"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"s",
+				"select"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"bord",
+				"border-right"
+			],
+			[
+				"session",
+				"session_destroy"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"po",
+				"port"
+			],
+			[
+				"tr",
+				"trim"
+			],
+			[
+				"do",
+				"donnees"
+			],
+			[
+				"nb",
+				"nbKm"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"no",
+				"nomLu"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"te",
+				"text-align-last"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"kaya",
+				"Kayak"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"mail",
+				"mail"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"th",
+				"thin"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"wh",
+				"width"
+			],
+			[
+				"h",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "git",
+		"selected_items":
+		[
+			[
+				"git",
+				"Github: Repository"
+			],
+			[
+				"gith",
+				"github: set remote for integration"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Git: Commit"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 452.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/H/Documents/Sublime Text Build 3126 x64/Data/Packages/User/Github Tools.sublime-settings",
+		"/H/www/AppliFrais/application/views/v_connexion.php",
+		"/H/www/AppliFrais/application/views/templates/t_visiteur.php",
+		"/H/www/blogmvc/index.php",
+		"/H/www/AppliFrais/application/config/DB script/Generateur/majGSB_main.php",
+		"/H/www/AppliFrais/application/config/database.php",
+		"/H/www/AppliFrais/application/controllers/c_visiteur.php",
+		"/H/www/sio2_revision/test.php",
+		"/H/www/blogmvc/Modele.php",
+		"/H/www/blogmvc/vueAccueil.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/SiteController.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/HomeController.php",
+		"/H/www/monitoring/sftp-config.json",
+		"/H/www/MonBlog-sans-mvc/index.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/CheckWebSite.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/Verif.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/home.blade.php",
+		"/H/www/sio2_revision/lib.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/web.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/produits.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/header.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/index.html",
+		"/H/Documents/log-temp-connect.txt",
+		"/C/Users/nedelec/AppData/Local/Temp/scp46924/var/www/index.html",
+		"/C/Users/nedelec/AppData/Local/Temp/scp57244/var/www/i.html",
+		"/H/www/Lafleur_v1_Elev/v3/commandes.php",
+		"/H/www/Lafleur_v1_Elev/v3/commande.php",
+		"/C/Users/nedelec/AppData/Local/Temp/scp05111/var/www/index.html",
+		"/H/www/Lafleur_v1_Elev/v3/include/header.php",
+		"/H/www/Lafleur_v1_Elev/v3/delPannier.php",
+		"/H/www/Lafleur_v1_Elev/v3/main.css",
+		"/H/www/Lafleur_v1_Elev/v3/css/style.css",
+		"/H/www/Lafleur_v1_Elev/v3/include/menu_compte.php",
+		"/H/www/Lafleur_v1_Elev/v3/login.php",
+		"/H/www/Lafleur_v1_Elev/v1/index.html",
+		"/H/www/Lafleur_v1_Elev/v3/index.php",
+		"/H/www/Lafleur_v1_Elev/v3/pannier.php",
+		"/H/www/Lafleur_v1_Elev/v3/viderPannier.php",
+		"/H/www/Lafleur_v1_Elev/v3/produits.php",
+		"/H/www/TP_Ventes/recap.php",
+		"/H/www/TP_Ventes/lib/function.php",
+		"/H/www/TP_Ventes/vente.php",
+		"/H/www/TP_Ventes/index.php",
+		"/C/Users/nedelec/AppData/Local/Temp/scp04744/var/www/index.html",
+		"/H/www/TP_Ventes/viderRecap.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/bdd.php",
+		"/C/Users/nedelec/AppData/Local/Temp/kayak_prod.sql",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/db.php",
+		"/T/SI6/LaFleur/lafleur_V2.sql",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/addgroup.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/prof.html",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/mygroup.php",
+		"/H/www/kayakmor/produit_edit.php",
+		"/H/www/PUZZLE/index.html",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/mail.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-2/profile.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/register.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/bdd 2.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/profile.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/desabonner.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/.htaccess 4",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/.htaccess 3",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/.htaccess 2",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/inscription_news.php",
+		"/C/Users/nedelec/AppData/Local/Temp/fz3temp-1/main.css"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": ".project.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 310.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
