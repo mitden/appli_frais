@@ -19,7 +19,8 @@
 					echo 
 					'<p>
 						<label for="'.$idFrais.'">'.$libelle.'</label>
-						<input type="text" id="'.$idFrais.'" name="lesFrais['.$idFrais.']" size="10" maxlength="5" value="'.$quantite.'" />
+						<label for=for="'.$idFrais.'">'.$quantite.'</label> </br>
+					   
 					</p>
 					';
 				}
