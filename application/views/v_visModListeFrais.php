@@ -1,7 +1,7 @@
 <?php
 	$this->load->helper('url');
 ?>
-TESSST
+
 <div id="contenu">
 	<h2>Renseigner ma fiche de frais du mois <?php echo $numMois."-".$numAnnee; ?></h2>
 					
@@ -22,14 +22,14 @@ TESSST
 						echo 
 						'<p>
 							<label for="'.$idFrais.'">'.$libelle.'</label>
-							<input type="text" id="'.$idFrais.'" name="lesFrais['.$idFrais.']" size="10" maxlength="5" value="'.$quantite.'" />
+							<input type="number" min="0" id="'.$idFrais.'" name="lesFrais['.$idFrais.']" size="10" maxlength="5" value="'.$quantite.'" />
 						</p>
 						';
 					}
 				?>
 			</fieldset>
 		</div>
-		<div class="piedForm">
+		<div class="piedForm"> 
 			<p>
 				<input id="ok" type="submit" value="Enregistrer" size="20" />
 				<input id="annuler" type="reset" value="Effacer" size="20" />
