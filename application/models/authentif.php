@@ -25,13 +25,16 @@ class Authentif extends CI_Model {
 	 * @param $nom
 	 * @param $prenom
 	 */
-	public function connecter($idUser,$nom,$prenom)
+	public function connecter($idUser,$nom,$prenom,$idmetier,$labelmetier)
 	{	// TODO : s'assurer que les paramètres reçus sont cohérents avec ceux mémorisés en session
 
 		$authUser = array(
                    'idUser'  => $idUser,
                    'nom' => $nom,
-                   'prenom' => $prenom
+                   'prenom' => $prenom,
+                   'idmetier' => $idmetier,
+                   'labelmetier'=> $labelmetier
+
 				);
 
 		$this->session->set_userdata($authUser);
@@ -45,7 +48,9 @@ class Authentif extends CI_Model {
 		$authUser = array(
                    'idUser'  => '',
                    'nom' => '',
-                   'prenom' => ''
+                   'prenom' => '',
+                   'idmetier' => '',
+                   'labelmetier'=>''
 				);
 	
 		$this->session->unset_userdata($authUser);
@@ -65,7 +70,7 @@ class Authentif extends CI_Model {
 	
 		$this->load->model('dataAccess');
 
-		$authUser = $this->dataAccess->getInfosVisiteur($login, $mdp);
+		$authUser = $this->dataAccess->getInfosUser($login, $mdp);
 
 		return $authUser;
 	}
