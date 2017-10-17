@@ -20,9 +20,9 @@ class DataAccess extends CI_Model {
 	 * @return l'id, le nom et le prénom sous la forme d'un tableau associatif 
 	*/
 	public function getInfosUser($login, $mdp){
-		$req = "select user.id as id, user.nom as nom, user.prenom as prenom,user.catuser = catuser 
-				from user 
-				where user.login=? and user.mdp=?";
+		$req = "select user.id as id, user.nom as nom, user.prenom as prenom,user.idmetier as idmetier ,metier.label as labelmetier
+				from user ,metier
+				where user.idmetier = metier.id and user.login=? and user.mdp=?";
 		$rs = $this->db->query($req, array ($login, $mdp));
 		$ligne = $rs->first_row('array'); 
 		return $ligne;
@@ -343,5 +343,19 @@ class DataAccess extends CI_Model {
 				where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
 		$this->db->simple_query($req);
 	}
+
+
+	public function getMetierInfo($idmetier){
+		$req = "select metier.label  
+				from metier 
+				where metier.login=?";
+		$rs = $this->db->query($req, array ($login, $mdp));
+		$ligne = $rs->first_row('array'); 
+		return $ligne;
+
+
+
+	}
+
 }
 ?>
