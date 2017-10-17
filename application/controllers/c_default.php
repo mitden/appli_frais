@@ -27,7 +27,20 @@ class C_default extends CI_Controller {
 		else
 		{
 			$this->load->helper('url');
-			redirect('/c_visiteur/');
+			
+
+			switch ($this->session->userdata('idmetier')) {
+				case 1:
+						redirect('/c_visiteur/');
+					break;
+				
+				case 2:
+					
+					redirect('/c_comptable/');
+					break;
+			}
+
+
 		}
 	}
 	
@@ -52,7 +65,7 @@ class C_default extends CI_Controller {
 		}
 		else
 		{
-			$this->authentif->connecter($authUser['id'], $authUser['nom'], $authUser['prenom']);
+			$this->authentif->connecter($authUser['id'], $authUser['nom'], $authUser['prenom'],$authUser['idmetier'],$authUser['labelmetier']);
 			$this->index();
 		}
 	}
