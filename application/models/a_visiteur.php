@@ -34,7 +34,7 @@ class A_visiteur extends CI_Model {
 			if(!$this->dataAccess->ExisteFiche($idVisiteur, $unMois)) $this->dataAccess->creeFiche($idVisiteur, $unMois);
 		}
 		// envoie de la vue accueil du visiteur
-		$this->templates->load('t_visiteur', 'v_visAccueil');
+		$this->templates->load('t_base', 'visiteur/v_visAccueil');
 	}
 	
 	/**
@@ -51,7 +51,7 @@ class A_visiteur extends CI_Model {
 
 		$data['notify'] = $message;
 		$data['mesFiches'] = $this->dataAccess->getFiches($idVisiteur);		
-		$this->templates->load('t_visiteur', 'v_visMesFiches', $data);	
+		$this->templates->load('t_base', 'visiteur/v_visMesFiches', $data);	
 	}	
 
 	/**
@@ -68,7 +68,7 @@ class A_visiteur extends CI_Model {
 		$data['lesFraisHorsForfait'] = $this->dataAccess->getLesLignesHorsForfait($idVisiteur,$mois);
 		$data['lesFraisForfait'] = $this->dataAccess->getLesLignesForfait($idVisiteur,$mois);		
 
-		$this->templates->load('t_visiteur', 'v_visVoirListeFrais', $data);
+		$this->templates->load('t_base', 'visiteur/v_visVoirListeFrais', $data);
 	}
 
 	/**
@@ -88,7 +88,7 @@ class A_visiteur extends CI_Model {
 		$data['lesFraisHorsForfait'] = $this->dataAccess->getLesLignesHorsForfait($idVisiteur,$mois);
 		$data['lesFraisForfait'] = $this->dataAccess->getLesLignesForfait($idVisiteur,$mois);		
 
-		$this->templates->load('t_visiteur', 'v_visModListeFrais', $data);
+		$this->templates->load('t_base', 'visiteur/v_visModListeFrais', $data);
 	}
 
 	/**

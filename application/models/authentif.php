@@ -74,4 +74,18 @@ class Authentif extends CI_Model {
 
 		return $authUser;
 	}
+
+
+	
+	public function check_access_group($idaccess_page){
+			if ($idaccess_page == $this->session->userdata('idmetier')) {
+				return true;
+			}else{
+				show_404();
+			}
+	
+   }
+
+
+
 }

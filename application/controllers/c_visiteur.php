@@ -14,6 +14,9 @@ class C_visiteur extends CI_Controller {
 	 * @param $action : l'action demandée par le visiteur
 	 * @param $params : les éventuels paramètres transmis pour la réalisation de cette action
 	*/
+
+	private $idmetier = 1;
+
 	public function _remap($action, $params = array())
 	{
 		// chargement du modèle d'authentification
@@ -27,7 +30,12 @@ class C_visiteur extends CI_Controller {
 			$this->templates->load('t_connexion', 'v_connexion', $data);
 		}
 		else
-		{
+		{	
+
+			//Control access group
+			$this->authentif->check_access_group($this->idmetier);
+
+
 			// Aiguillage selon l'action demandée 
 			// CI a traité l'URL au préalable de sorte à toujours renvoyer l'action "index"
 			// même lorsqu'aucune action n'est exprimée
