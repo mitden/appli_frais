@@ -290,14 +290,63 @@ class DataAccess extends CI_Model {
 	 * 
 	 * @param $idVisiteur 
 	*/
-	public function getFiches ($idVisiteur) {
-		$req = "select idVisiteur, mois, montantValide, dateModif, id, libelle
-				from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
-				where fichefrais.idvisiteur = '$idVisiteur'
-				order by mois desc";
-		$rs = $this->db->query($req);
-		$lesFiches = $rs->result_array();
+	public function getFiches ($idVisiteur = null) {
+		
+			$lesFiches = $this->db->select(' idVisiteur, mois, montantValide, dateModif, id, libelle')
+			->from('fichefrais')
+			->join('Etat','ficheFrais.idEtat = Etat.id')
+			->where('fichefrais.idvisiteur',$idVisiteur)
+			->order_by('mois', 'DESC')
+			->get()
+			->result_array();
+
+		
 		return $lesFiches;
+	}
+
+	public function getFichesSigned(){
+		$lesFiches = $this->db->select('F.idvisiteur,U.id,U.prenom,U.nom, mois, montantValide, dateModif, E.id, E.libelle')
+			->from('fichefrais F')
+			->join('Etat E','F.idEtat = E.id')
+			->join('user U','F.idVisiteur = U.id')
+			->where('E.id','CL')
+			->order_by('nom', 'ASC')
+			->order_by('mois', 'DESC')
+			->get()
+			->result_array();
+
+			return $lesFiches;
+
+	}
+
+
+		public function getFichesValidees(){
+		$lesFiches = $this->db->select('F.idvisiteur,U.id,U.prenom,U.nom, mois, montantValide, dateModif, E.id, E.libelle')
+			->from('fichefrais F')
+			->join('Etat E','F.idEtat = E.id')
+			->join('user U','F.idVisiteur = U.id')
+			->where('E.id','VA')
+			->order_by('nom', 'ASC')
+			->order_by('mois', 'DESC')
+			->get()
+			->result_array();
+
+			return $lesFiches;
+
+	}
+		public function getFichesPaiements(){
+		$lesFiches = $this->db->select('F.idvisiteur,U.id,U.prenom,U.nom, mois, montantValide, dateModif, E.id, E.libelle')
+			->from('fichefrais F')
+			->join('Etat E','F.idEtat = E.id')
+			->join('user U','F.idVisiteur = U.id')
+			->where('E.id','MP')
+			->order_by('nom', 'ASC')
+			->order_by('mois', 'DESC')
+			->get()
+			->result_array();
+
+			return $lesFiches;
+
 	}
 	
 	/**
