@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	$this->load->helper('url');
 	$this->load->model('dataAccess');
 	$v_path = base_url('application/views');
@@ -33,7 +33,7 @@
 				<div id="infosUtil">
 					<h2></h2>
 				</div>  
-							<?php echo $menu; ?>
+							
 				<ul id="menuList">
 					<li>
 						<?php echo $this->session->userdata('labelmetier')?> :<br/>
@@ -41,14 +41,14 @@
 					</li>
 					<br/>
 					<li class="smenu">
-						<?php echo anchor('c_compatble/', 'Accueil', 'title="Page d\'accueil"'); ?>
+						<?php echo anchor('c_visiteur/', 'Accueil', 'title="Page d\'accueil"'); ?>
 					</li>
 					<li class="smenu">
-						<?php echo anchor('c_compatble/mesFiches', 'Mes fiches de frais', 'title="Consultation de mes fiches de frais"'); ?>
+						<?php echo anchor('c_visiteur/mesFiches', 'Mes fiches de frais', 'title="Consultation de mes fiches de frais"'); ?>
 					</li>
 					<br/>
 					<li class="smenu">
-						<?php echo anchor('c_compatble/deconnecter', 'Se déconnecter', 'title="Déconnexion"'); ?>
+						<?php echo anchor('c_visiteur/deconnecter', 'Se déconnecter', 'title="Déconnexion"'); ?>
 					</li>
 				</ul>
 				
