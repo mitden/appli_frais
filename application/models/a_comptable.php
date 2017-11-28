@@ -31,8 +31,111 @@ class A_comptable extends CI_Model {
 		
 	
 		// envoie de la vue accueil du visiteur
-		$this->templates->load('t_base', 'comptable/v_visAccueil');
+		$this->templates->load('t_base_comptable', 'comptable/v_visAccueil');
 	}
+	
+	public function fiches ($message=null)
+	{	// TODO : s'assurer que les paramètres reçus sont cohérents avec ceux mémorisés en session
+		
+		$iduser = $this->session->userdata('idUser');
+
+		
+		$data['notify'] = $message;
+
+		$data['fiches'] = $this->dataAccess->getFichesSigned();	
+
+	
+		$this->templates->load('t_base_comptable', 'comptable/v_visFiches', $data);	
+	}
+
+
+	public function fiche($param){
+
+			
+					$idVisiteur = $param[0];
+					$mois = $param[1];
+					  if (isset($param[2])) {$action = $param[2];}else{$action = null;};
+					
+					if (!$this->dataAccess->existeFiche($idVisiteur,$mois)) {
+							echo "Fiche inexistante";
+					}elseif ($action == "show") {
+						
+						$data['numAnnee'] = substr( $mois,0,4);
+						$data['numMois'] = substr( $mois,4,2);
+						$data['lesFraisHorsForfait'] = $this->dataAccess->getLesLignesHorsForfait($idVisiteur,$mois);
+						$data['lesFraisForfait'] = $this->dataAccess->getLesLignesForfait($idVisiteur,$mois);		
+
+						$this->templates->load('t_base_comptable', 'visiteur/v_visVoirListeFrais', $data);
+						
+				}elseif ($action == "valider") {
+					echo "valider";
+
+						$this->dataAccess->majEtatFicheFrais($idVisiteur,$mois,'VA');
+
+						redirect('/c_comptable/fiches');
+
+
+
+				}elseif ($action == "refuser") {
+					echo "valider";
+
+						$this->dataAccess->majEtatFicheFrais($idVisiteur,$mois,'RE');
+
+						redirect('/c_comptable/fiches');
+
+
+
+				}elseif ($action == "paiement") {
+					echo "paiement";
+
+						$this->dataAccess->majEtatFicheFrais($idVisiteur,$mois,'MP');
+
+						redirect('/c_comptable/paiements');
+
+
+
+				}elseif ($action == "remboursee") {
+					echo "remboursee";
+
+						$this->dataAccess->majEtatFicheFrais($idVisiteur,$mois,'RB');
+
+						redirect('/c_comptable/paiements');
+
+
+
+				}else{
+						$data['numAnnee'] = substr( $mois,0,4);
+						$data['numMois'] = substr( $mois,4,2);
+						$data['lesFraisHorsForfait'] = $this->dataAccess->getLesLignesHorsForfait($idVisiteur,$mois);
+						$data['lesFraisForfait'] = $this->dataAccess->getLesLignesForfait($idVisiteur,$mois);		
+
+						$this->templates->load('t_base_comptable', 'visiteur/v_visVoirListeFrais', $data);
+
+
+
+				}				
+
+
+
+
+	}	
+
+
+
+	public function paiements($message=null){
+		$iduser = $this->session->userdata('idUser');
+
+		
+		$data['notify'] = $message;
+
+		$data['fichesValidees'] = $this->dataAccess->getFichesValidees();	
+		$data['fichesPaiements'] = $this->dataAccess->getFichesPaiements();
+		
+		$this->templates->load('t_base_comptable', 'comptable/v_paiements', $data);	
+
+
+	}
+
 	
 	
 }

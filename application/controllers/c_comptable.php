@@ -46,6 +46,25 @@ class C_comptable extends CI_Controller {
 				$this->session->unset_userdata('mois');
 
 				$this->a_comptable->accueil();
+			}elseif ($action == 'fiches') {
+
+
+				$this->load->model('a_comptable');
+
+				$this->a_comptable->fiches();
+			}elseif ($action == 'fiche') {
+
+
+				$this->load->model('a_comptable');
+
+				$this->a_comptable->fiche($params);
+			}
+			elseif ($action == 'paiements') {
+
+
+				$this->load->model('a_comptable');
+
+				$this->a_comptable->paiements();
 			}
 			elseif ($action == 'deconnecter')	// deconnecter demandé : on active la fonction deconnecter du modèle authentif
 			{
